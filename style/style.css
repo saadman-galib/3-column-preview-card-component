@@ -108,10 +108,11 @@ body {
 
 @media (max-width: 850px) {
   .main-container {
-    height: 350vh;
+    height: 435vh;
     width: 100%;
   }
   .container {
+    margin-top: 1050px;
     width: 350px;
     flex-direction: column;
   }
