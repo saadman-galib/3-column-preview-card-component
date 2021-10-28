@@ -24,9 +24,10 @@ body {
 
 .container {
   width: 950px;
-  height: 510px;
+  min-height: 510px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .all-part {
@@ -107,19 +108,22 @@ body {
 
 @media (max-width: 850px) {
   .main-container {
-    height: auto;
+    height: 350vh;
     width: 100%;
-    padding-bottom: 50px;
   }
   .container {
+    width: 350px;
     flex-direction: column;
+  }
+  .all-part {
+    width: 100%;
   }
   .first-part {
     border-top-right-radius: 8px;
     border-bottom-left-radius: 0px;
   }
-  .second-part {
+  .third-part {
     border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 8px;
   }
 }

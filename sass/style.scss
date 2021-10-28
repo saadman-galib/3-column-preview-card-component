@@ -33,9 +33,10 @@ body{
 
 .container{
     width: 950px;
-    height: 510px;
+    min-height: 510px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     // margin-left: auto;
     // margin-right: auto;
     // margin-top: auto;
@@ -125,14 +126,25 @@ body{
     // *{display: none;}
 
     .main-container{
-        height: auto;
+        height: 350vh;
         width: 100%;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
     }
 
+    // .container{
+    //     flex-direction: column;
+    //     width: 917px;
+    //     height: auto;
+    //     // margin-left: auto;
+    // }
+
     .container{
+        width: 350px;
         flex-direction: column;
-        // margin-left: auto;
+    }
+
+    .all-part{
+        width: 100%;
     }
 
     .first-part{
@@ -140,8 +152,8 @@ body{
         border-bottom-left-radius: 0px;
     }
 
-    .second-part{
+    .third-part{
         border-top-right-radius: 0px;
-        border-bottom-left-radius: 0px;
+        border-bottom-left-radius: $main-radius;
     }
 }
