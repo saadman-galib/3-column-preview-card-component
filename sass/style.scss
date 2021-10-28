@@ -158,3 +158,46 @@ body{
         border-bottom-left-radius: $main-radius;
     }
 }
+
+@media (max-width: 350px) {
+    .main-container{
+        height: 394vh;
+    }
+
+    .container{
+        margin-top: 920px;
+    }
+
+    .all-part{
+        h2{
+            font-size: 30px;
+        }
+
+        p{
+            font-size: 13px;
+        }
+
+        .middle-part{
+            margin-bottom: 75px;
+        }
+
+        button{
+            font-size: 11px;
+            padding: 7px 12px;
+        }
+    }
+
+
+}
+
+@media (max-height: 600px) {
+    .main-container{
+        height: 415vh;
+    }
+}
+
+@media (max-height: 570px) {
+    .main-container{
+        height: 430vh;
+    }
+}

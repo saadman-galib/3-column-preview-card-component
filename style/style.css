@@ -128,3 +128,37 @@ body {
     border-bottom-left-radius: 8px;
   }
 }
+
+@media (max-width: 350px) {
+  .main-container {
+    height: 394vh;
+  }
+  .container {
+    margin-top: 920px;
+  }
+  .all-part h2 {
+    font-size: 30px;
+  }
+  .all-part p {
+    font-size: 13px;
+  }
+  .all-part .middle-part {
+    margin-bottom: 75px;
+  }
+  .all-part button {
+    font-size: 11px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-height: 600px) {
+  .main-container {
+    height: 415vh;
+  }
+}
+
+@media (max-height: 570px) {
+  .main-container {
+    height: 430vh;
+  }
+}
