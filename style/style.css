@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f2f2f2;
 }
 
 .main-container {
@@ -153,12 +154,15 @@ body {
 
 @media (max-height: 600px) {
   .main-container {
-    height: 415vh;
+    height: 450vh;
+  }
+  .container {
+    margin-top: 1050px;
   }
 }
 
 @media (max-height: 570px) {
   .main-container {
-    height: 430vh;
+    height: 460vh;
   }
 }
