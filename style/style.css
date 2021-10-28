@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +13,113 @@ body {
   justify-content: center;
 }
 
+.main-container {
+  padding: 3rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
-  width: 60%;
+  width: 950px;
+  height: 510px;
   display: flex;
   flex-direction: row;
 }
 
 .all-part {
   width: 33.33%;
+  color: #f2f2f2;
+  padding: 50px;
+}
+
+.all-part h2 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 38px;
+  margin-bottom: 30px;
+}
+
+.all-part p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.all-part .middle-part {
+  height: 173px;
+  margin-bottom: 85px;
+}
+
+.all-part button {
+  width: auto;
+  height: auto;
+  padding: 13px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  transition-property: color, background-color;
+}
+
+.all-part button:hover {
+  color: #fff;
+  border: 2.5px solid #fff;
+  background-color: transparent;
+}
+
+.first-part {
+  background-color: #e38826;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.first-part button {
+  color: #e38826;
+}
+
+.second-part {
+  background-color: #006970;
+}
+
+.second-part button {
+  color: #006970;
+}
+
+.third-part {
+  background-color: #004241;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.third-part button {
+  color: #004241;
+}
+
+@media (max-width: 850px) {
+  .main-container {
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .first-part {
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+  .second-part {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
